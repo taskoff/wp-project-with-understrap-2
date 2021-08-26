@@ -81,6 +81,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				);
 				?>
 				<?php echo do_shortcode("[woo_cart_but]"); ?>
+				
 			<?php if ( 'container' === $container ) : ?>
 		
 				  
