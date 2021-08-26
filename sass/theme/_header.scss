@@ -54,6 +54,9 @@
     	border-radius: 50%;
     	padding: 1px;  
 }
+.mobile-cart-icon-box {
+	display: none;
+}
 .navbar-dark .navbar-nav  {
     .nav-link {
 
@@ -143,11 +146,14 @@ input::-webkit-input-placeholder {
 }
 #searchform input::-webkit-input-placeholder {
 	color: transparent;
-<<<<<<< HEAD
 }
 
 .navbar-dark .navbar-toggler {
     background-color: $blue-500;
+}
+
+.mobile-search-box {
+	display: none;
 }
 
 // ============ Responzive Header ===========
@@ -159,6 +165,14 @@ input::-webkit-input-placeholder {
     // #searchform {
     //     display: flex;
     // }
+	.cart-icon-box {
+		display: none;
+	}
+	.mobile-cart-icon-box {
+		display: block;
+		margin-right: 20px;
+
+	}
     .cart-icon-wrapper {
         order: 1;
     }
@@ -168,6 +182,15 @@ input::-webkit-input-placeholder {
     #navbarNavDropdown {
         order: 3;
     }
-=======
->>>>>>> 505b090e60ab67ea51266db1ee9037ffe733fa44
+	.mobile-search-box {
+		display: flex;
+		// justify-content: center;
+		// flex-grow: 1;
+		margin-left: 20px;
+	}
+	.search-box {
+		display: none;
+		
+	}
+
 }
