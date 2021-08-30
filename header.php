@@ -65,7 +65,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</button>
 
 				<!-- The WordPress Menu goes here -->
-				<?php get_template_part( 'searchform' ); ?>
+				<div class="search-box">
+					<?php get_template_part( 'searchform' ); ?>
+				</div>
 				<?php
 				wp_nav_menu(
 					array(
@@ -80,12 +82,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				);
 				?>
-				<?php echo do_shortcode("[woo_cart_but]"); ?>
+				<div class="cart-icon-box">
+					<?php echo do_shortcode("[woo_cart_but]"); ?>
+				</div>
+				
 			<?php if ( 'container' === $container ) : ?>
 		
 				  
 			</div><!-- .container -->
 			<?php endif; ?>
+			<div class="mobile-search-box">
+			<?php get_template_part( 'searchform' ); ?>
+			</div>
+			<div class="mobile-cart-icon-box">
+					<?php echo do_shortcode("[woo_cart_but]"); ?>
+			</div>
 
 		</nav><!-- .site-navigation -->
 
